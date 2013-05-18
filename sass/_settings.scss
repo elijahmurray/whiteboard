@@ -41,10 +41,24 @@ $em-base: 16px !default;
 
 // Colors
 
-// $primary-color: #2ba6cb;
-// $secondary-color: #e9e9e9;
-// $alert-color: #c60f13;
-// $success-color: #5da423;
+$orange: #f36112;
+$teal: #6a948f;
+$l-teal: #86b8b1;
+$cream: #f2e1bf;
+$l-cream: #f9f3e6;
+$brown: #3d1c00;
+$l-brown: #6e5540;
+
+
+$primary-color: $orange;
+$secondary-color: $teal;
+$alert-color: #c60f13;
+$success-color: #5da423;
+
+ul, li {
+list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, text, ul, li, a {color: $brown;}
 
 // Make sure border radius matches unless we want it different.
 
@@ -191,7 +205,6 @@ $em-base: 16px !default;
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
 // $definition-list-margin-bottom: emCalc(12px);
-
 // Blockquotes
 
 // $blockquote-font-color: lighten($header-font-color, 30%);

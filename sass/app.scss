@@ -46,3 +46,58 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+$main-shadow: -7px 7px 17px rgba(0,0,0,0.2);
+$small-shadow: -4px 4px 9px rgba(0,0,0,0.1);
+
+body {background: adjust-color($cream, $lightness: -50%, $saturation: -50%); min-height: 700px;}
+
+header {
+	background: $orange;
+	margin-bottom: 100px;
+}
+
+.topnav {
+	float: right;
+	li {float: left; margin-left: 20px;}
+		a {color: #FFF;}
+}
+.logo {float:left; color: #FFF}
+
+#sidebar {
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	box-shadow: $small-shadow;
+	ul {
+		width: 100%;
+
+		
+		li {
+			background: $teal;
+			float: left;
+			width: 100%;
+			height: 60px;
+			border-bottom: 2px solid darken($teal, 20%);
+			padding: 15px 15px 0 0;
+			text-align: right;
+			box-shadow: inset -18px 0px 16px -12px rgba(0,0,0,.2);
+			a {color: darken(white, 20%);}
+			&.active {background: #FFF;
+				box-shadow: inset 0 0 0 0;
+				a {color: $teal;}
+			}
+		}
+	}
+}
+
+#main-content {
+	height: 100px; 
+	background: white; 
+	min-height: 500px;
+	padding-top: 20px;
+	box-shadow: $main-shadow;
+	&.signup {
+		h1 {text-align: center; font-size: 30px;}
+		input {border-radius: 5px; background: $l-teal; padding: 20px; border: 3px solid $teal; text-align: center; width: 500px; margin: 0 auto;}
+	}
+}
