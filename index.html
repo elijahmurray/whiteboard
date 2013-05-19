@@ -4,6 +4,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Foundation 4</title>
@@ -14,6 +16,7 @@
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 
+
 </head>
 <body>
 
@@ -22,7 +25,7 @@
 			<div class="large-12">
 				<a href="#"><div class="logo">WhiteBoard</div></a>
 				<ul class="topnav">
-					<li><a href="#">Blank</a></li>
+					<!-- <li><a href="#">Blank</a></li> -->
 					<li><a href="#">Profile</a></li>
 					<li><a href="#">Menu</a></li>
 				</ul>
@@ -42,11 +45,38 @@
 
 		</div>
 		<div class="large-10 columns signup" id="main-content">
-			<h1>by students, for students</h1>
-			<form action=""><input type="email" value="email"></form>
+			<section class="columns large-10 large-centered">
+				<h1>by students, only for students</h1>
+				<form action=""><input type="email" value="name@college.edu"></form>
+				<hr />
+			</section>
+			<section class="columns large-12">
+				<h2>How it works:</h2>
+				<p class="columns large-10 large-offset-1">Your campus life digitized. WhiteBoard never forgets your homework or midterms, your parties, and even your groups in case you’re a nerd.</p>
+			</section>
+			<section class="columns large-12">
+				<div class="columns large-6">
+					<h3 style="text-align: center">Your Schedule</h3>
+					<p class="">Set it and forget it. A schedule that works, and adapts to you.</p>
+					<div class="image-holder schedule"></div>
+				</div>
+				<div class="columns large-6">
+					<h3 style="text-align: center">Your School</h3>
+					<p class="">Campus life never has been so easy. Parties, clubs, events and groups.</p>
+					<div class="image-holder school"></div>
+				</div>
+			</section>
+		
+
 		</div>
 	</div>
 
+
+
+
+	<footer>
+		Copyright WhiteBoard, 2013
+	</footer>
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
@@ -85,5 +115,6 @@
   <script>
     $(document).foundation();
   </script>
+
 </body>
 </html>

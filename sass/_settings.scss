@@ -2,9 +2,38 @@
 // Foundation Variables
 //
 
+// Colors
+
+$orange: #f36112;
+$teal: #6a948f;
+$l-teal: #86b8b1;
+$cream: #f2e1bf;
+$l-cream: #f9f3e6;
+$brown: #3d1c00;
+$l-brown: #6e5540;
+
+
+$primary-color: $orange;
+$secondary-color: $teal;
+$alert-color: #c60f13;
+$success-color: #5da423;
+
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with brower-based text zoom or user-set defaults.
 $base-font-size: 100% !default;
+
+@font-face {
+    font-family: 'OstrichSansBlack';
+    src: url('ostrich-black-webfont.eot');
+    src: url('ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ostrich-black-webfont.woff') format('woff'),
+         url('ostrich-black-webfont.ttf') format('truetype'),
+         url('ostrich-black-webfont.svg#OstrichSansBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$trans-speed: 300ms;
 
 // $base-line-height is 24px while $base-font-size is 16px
 // $base-line-height: 150%;
@@ -26,9 +55,10 @@ $em-base: 16px !default;
 // $default-float: left;
 
 // $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+$body-font-color: $brown;
+$body-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$alt-font-family: "OstrichSansBlack";
+$body-font-weight: 300;
 // $body-font-style: normal;
 
 // Font-smoothing
@@ -38,27 +68,6 @@ $em-base: 16px !default;
 // Text direction settings
 
 // $text-direction: ltr;
-
-// Colors
-
-$orange: #f36112;
-$teal: #6a948f;
-$l-teal: #86b8b1;
-$cream: #f2e1bf;
-$l-cream: #f9f3e6;
-$brown: #3d1c00;
-$l-brown: #6e5540;
-
-
-$primary-color: $orange;
-$secondary-color: $teal;
-$alert-color: #c60f13;
-$success-color: #5da423;
-
-ul, li {
-list-style-type: none;
-}
-h1, h2, h3, h4, h5, h6, text, ul, li, a {color: $brown;}
 
 // Make sure border radius matches unless we want it different.
 
@@ -140,7 +149,7 @@ h1, h2, h3, h4, h5, h6, text, ul, li, a {color: $brown;}
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: $orange;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
