@@ -7,6 +7,8 @@
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
+// @import "home";
+
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
@@ -49,7 +51,7 @@
 $main-shadow: -7px 7px 17px rgba(0,0,0,0.2);
 $small-shadow: -4px 4px 9px rgba(0,0,0,0.1);
 
-body {background: darken($cream, 75%); min-height: 700px;}
+body {background: $cream; min-height: 700px;}
 
 header {
 	background: $orange;
@@ -63,7 +65,7 @@ footer {
 	padding: 11px;
 	height: 50px;
 }
-
+.contained {width: 960px;}
 .topnav {
 	float: right;
 	li {float: left; margin-left: 20px;}
@@ -79,7 +81,7 @@ footer {
 	letter-spacing: 1px;
 }
 
-#sidebar {
+#left-nav {
 	margin: 0;
 	padding: 0;
 	z-index: 1;
@@ -111,6 +113,7 @@ footer {
 
 #main-content {
 	background: white; 
+	float: left;
 	min-height: 500px;
 	padding-top: 20px;
 	box-shadow: $main-shadow;
@@ -122,7 +125,7 @@ footer {
 			padding: 20px; 
 			border: 3px solid $teal; 
 			text-align: center; 
-			width: 500px; 
+			
 			margin: 0 auto 30px; 
 			font-size: 18px;
 			color: #FFF;
@@ -146,6 +149,7 @@ h2, h3 {color: $orange;}
 section { margin-bottom: 30px;}
 
 $med-pic-size: 190px;
+$sm-pic-size: 90px;
 
 .image-holder {
 	border-radius: $med-pic-size; border: 8px solid $orange; height: $med-pic-size; width: $med-pic-size; margin: 0 auto; box-shadow: inset 0 0 5px;
@@ -157,4 +161,18 @@ $med-pic-size: 190px;
 		background: url("../images/drexel.jpg") bottom;
 		background-size: 320px; 
 	}	
+}
+#sidebar-container {padding-left:40px; min-height: 250px; padding-right: 0;
+	#sidebar {width: 100%;
+		.sidebar-box {background: white;  padding: 20px; margin-bottom: 30px;}
+		#profile {
+			.image-holder { border-radius: $sm-pic-size; height: $sm-pic-size; width: $sm-pic-size; border: none;
+				&.profile-pic { background: url("../images/profile.jpg") -38px -3px; background-size: 120px;}
+			}
+		}
+		#upload {background: $teal; color: white; font-size: 35px; font-weight: bold; text-align: center;
+		}
+
+		#ads {min-height: 200px;}
+	}
 }
