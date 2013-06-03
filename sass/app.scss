@@ -52,7 +52,7 @@ $main-shadow: -7px 7px 17px rgba(0,0,0,0.2);
 $small-shadow: -4px 4px 9px rgba(0,0,0,0.1);
 
 body {background: $cream; min-height: 700px;}
-
+.clearfix {clear:both;}
 header {
 	background: $orange;
 	margin-bottom: 100px;
@@ -175,4 +175,22 @@ $sm-pic-size: 90px;
 
 		#ads {min-height: 200px;}
 	}
+}
+#upcoming-events {
+	ul li {float: left; width: 80px; height: 80px; background: $teal; margin: 10px; color: #FFF; text-align: center; font-family: $alt-font-family; line-height: 80px;}
+}
+#activities {
+	ul li {padding: 12px 0;}
+	a {font-weight: bold;}
+	border-left: 1px solid $teal;
+}
+#discussions {
+	table tr.even, table tr.alt, table tr {background: #f9f3e6; border: 2px solid #FFF;}
+	table tr.even, table tr.alt, table tr:nth-of-type(even) {background: #f2e1bf;}
+}
+#textbooks {
+	ul li {width: 180px; height: 180px; margin: 20px; float: left;
+		&.small{width: 90px; height: 90px;}
+	}
+
 }

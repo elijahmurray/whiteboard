@@ -264,7 +264,7 @@ figure {
  */
 /* line 259, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -2394,7 +2394,7 @@ blockquote p {
   /* line 376, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_type.scss */
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -2426,7 +2426,7 @@ blockquote p {
   /* line 395, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_type.scss */
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
@@ -4832,7 +4832,7 @@ form.custom .custom.disabled {
   right: 0px;
   width: 11px;
   height: 14px;
-  border: solid 4px black;
+  border: solid 4px #000;
   border-top: none;
   border-bottom: none;
 }
@@ -4844,7 +4844,7 @@ form.custom .custom.disabled {
   height: 14px;
   border: inset 8px;
   border-right-style: solid;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent #000;
 }
 /* line 116, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_orbit.scss */
 .orbit-container:hover .orbit-timer > span {
@@ -5046,7 +5046,7 @@ form.custom .custom.disabled {
 @media print {
   /* line 130, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_reveal.scss */
   .reveal-modal {
-    background: white !important;
+    background: #fff !important;
   }
 }
 /* Foundation Joyride */
@@ -5172,11 +5172,11 @@ form.custom .custom.disabled {
   text-decoration: none;
   font-size: 30px;
   font-weight: normal;
-  line-height: 0.5 !important;
+  line-height: .5 !important;
 }
 /* line 147, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_joyride.scss */
 .joyride-close-tip:hover, .joyride-close-tip:focus {
-  color: #eeeeee !important;
+  color: #eee !important;
 }
 
 /* line 150, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_joyride.scss */
@@ -5199,9 +5199,9 @@ form.custom .custom.disabled {
   position: absolute;
   border-radius: 3px;
   z-index: 102;
-  -moz-box-shadow: 0px 0px 30px white;
-  -webkit-box-shadow: 0px 0px 15px white;
-  box-shadow: 0px 0px 15px white;
+  -moz-box-shadow: 0px 0px 30px #ffffff;
+  -webkit-box-shadow: 0px 0px 15px #ffffff;
+  box-shadow: 0px 0px 15px #ffffff;
 }
 
 /* line 173, ../../../../../../Users/elijahmurray/.rvm/gems/ruby-1.9.3-p327/gems/zurb-foundation-4.1.6/scss/foundation/components/_joyride.scss */
@@ -6541,6 +6541,11 @@ body {
   min-height: 700px;
 }
 
+/* line 55, ../sass/app.scss */
+.clearfix {
+  clear: both;
+}
+
 /* line 56, ../sass/app.scss */
 header {
   background: #f36112;
@@ -6577,7 +6582,7 @@ footer {
 }
 /* line 74, ../sass/app.scss */
 .topnav a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #FFF;
 }
 
 /* line 77, ../sass/app.scss */
@@ -6663,7 +6668,7 @@ footer {
 /* line 134, ../sass/app.scss */
 #main-content.signup input:focus, #main-content.signup input:active {
   background: #6a948f;
-  box-shadow: 0 0 9px #efefef;
+  box-shadow: 0 0 9px #EFEFEF;
 }
 
 /* line 139, ../sass/app.scss */
@@ -6756,4 +6761,53 @@ section {
 /* line 176, ../sass/app.scss */
 #sidebar-container #sidebar #ads {
   min-height: 200px;
+}
+
+/* line 180, ../sass/app.scss */
+#upcoming-events ul li {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background: #6a948f;
+  margin: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: "OstrichSansBlack";
+  line-height: 80px;
+}
+
+/* line 182, ../sass/app.scss */
+#activities {
+  border-left: 1px solid #6a948f;
+}
+/* line 183, ../sass/app.scss */
+#activities ul li {
+  padding: 12px 0;
+}
+/* line 184, ../sass/app.scss */
+#activities a {
+  font-weight: bold;
+}
+
+/* line 188, ../sass/app.scss */
+#discussions table tr.even, #discussions table tr.alt, #discussions table tr {
+  background: #f9f3e6;
+  border: 2px solid #FFF;
+}
+/* line 189, ../sass/app.scss */
+#discussions table tr.even, #discussions table tr.alt, #discussions table tr:nth-of-type(even) {
+  background: #f2e1bf;
+}
+
+/* line 192, ../sass/app.scss */
+#textbooks ul li {
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+  float: left;
+}
+/* line 193, ../sass/app.scss */
+#textbooks ul li.small {
+  width: 90px;
+  height: 90px;
 }

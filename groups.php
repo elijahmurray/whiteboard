@@ -2,25 +2,75 @@
 	<div class="row">
 		<?php include('include/left-nav.php'); ?>
 		<div class="large-7 columns signup" id="main-content">
-			<section class="columns large-10 large-centered">
-				<h1>by students, only for students</h1>
-				<hr />
+			<div>
+				<section class="columns large-7">
+					<section id="class-details">
+						<h4>Business 101:207</h4>
+						<ul>
+							<li>Jodi Cataline</li>
+							<li>room: Pearl 110</li>
+							<li>Office Hours: 3pm - 6pm MWF</li>
+						</ul>
+					</section>
+					<section id="upcoming-events">
+						<h4>Upcoming Events</h4>
+						<ul>
+							<li>3 Days</li>
+							<li>1 Week</li>
+							<li>1 Month</li>
+						</ul>
+					</section>
+				</section>
+				<section class="columns large-5" id="activities">
+					<h4>Activities</h4>
+					<ul>
+						<li>Belinda uploaded a <a href="#">document</a></li>
+						<li>Karm left a <a href="#">comment</a></li>
+						<li>Cleavon added <a href="#">Bio Notes</a></li>
+					</ul>
+				</section>
+			</div> <!-- end of top section -->
+			<div class="clearfix"></div>
+			<section class="columns large-12 large-centered">
+				<h4>Discussions</h4>
+				<div id="discussions">
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td>party</td>
+								<td>12 hours</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Business 101 Recitation</td>
+								<td>16 hours</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Connect Homework</td>
+								<td>tomorrow at midnight</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Party</td>
+								<td>Saturday night</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- end of discussions -->
 			</section>
-			<section class="columns large-12">
-				<h2>How it works:</h2>
-				<p class="columns large-10 large-offset-1">Your campus life digitized. WhiteBoard never forgets your homework or midterms, your parties, and even your groups in case you’re a nerd.</p>
-			</section>
-			<section class="columns large-12">
-				<div class="columns large-6">
-					<h3 style="text-align: center">Your Schedule</h3>
-					<p class="">Set it and forget it. A schedule that works, and adapts to you.</p>
-					<div class="image-holder schedule"></div>
-				</div>
-				<div class="columns large-6">
-					<h3 style="text-align: center">Your School</h3>
-					<p class="">Campus life never has been so easy. Parties, clubs, events and groups.</p>
-					<div class="image-holder school"></div>
-				</div>
+
+			<section class="columns large-12 large-centered" id="textbooks">
+				<h3>Textbooks / Documents</h3>
+				<ul>
+					<li><img src="images/book.png" alt=""></li>
+					<li><img src="images/checklist.png" alt=""></li>
+					<li class="small"><img src="images/list.png" alt=""></li>
+					<li class="small"><img src="images/camera.png" alt=""></li>
+					<li><img src="" alt=""></li>
+					<li><img src="" alt=""></li>
+				</ul>
 			</section>
 		
 
@@ -28,4 +78,4 @@
 
 		<?php include('include/sidebar.php'); ?>
 	</div>
-<?php include('include/footer.php'); ?>	
+<?php include('include/footer.php'); ?>
